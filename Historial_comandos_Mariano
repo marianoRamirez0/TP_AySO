@@ -1,0 +1,31 @@
+ls
+cd repogit/
+ls
+cd TP_AySO/
+ls
+man sort
+cat /etc/passwd
+grep -v nologin /etc/passwd | head | sort -k 7
+grep -v nologin /etc/passwd | head | sort -k 7 >> lista_ordenada
+ls -la
+git add lista_ordenada
+git commit -m "ADD: Listado de usuarios ordenada"
+man tcpdump
+echo "tcpdump" > comando_dump_net
+git add comando_dump_net
+git commit -m "ADD: Comando para Capturar y analizar el tráfico de red"
+cat << FIN >> README.md
+Alumno: Mariano Ramirez 
+Division: 114
+Turno: M
+FIN
+
+git status
+git add README.md
+git commit -m "feat: modifico el README.md"
+cd
+ls -la
+cd repogit/
+cd TP_AySO/
+history -a >> SHOME/.bash_history
+history -a >> $HOME/.bash_history
